@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #fff, rgb(0, 0, 0));
+}
+
+.container {
+    margin: 2rem;
+    border: 2px solid white;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.item {
+    background-color: rgb(73, 73, 73);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700, 
+}
+
+.item5 {
+    /*grid-column: span 3;
+    grid-row: span 4;*/
+    grid-row: 1 / -1;
+    grid-column: span 2;
+}
